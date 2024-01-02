@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(47, 88%, 63%);
+  font-family: "Figtree", sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  margin: 200px auto;
+  background-color: hsl(0, 0%, 100%);
+  overflow: hidden;
+  border-radius: 2rem;
+  padding: 30px;
+  border: 1px solid black;
+  box-shadow: 10px 10px 0px black;
+}
+
+.container div:first-child img {
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.container div:nth-child(2) h4 {
+  background-color: hsl(47, 88%, 63%);
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 1.5rem 0;
+}
+
+.publish-p {
+  padding-bottom: 20px;
+  font-size: 14px;
+}
+
+h2 {
+  padding-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: hsl(47, 88%, 63%);
+}
+
+.description-p {
+  padding-bottom: 20px;
+  color: hsl(0, 0%, 50%);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.avatar {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  padding-top: 10px;
+  font-weight: 800;
+}
+
+.avatar > img {
+  width: 40px;
+}
+
+.attribution {
+  font-size: 10px;
+}
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0;
+  }
+}
